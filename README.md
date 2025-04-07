@@ -119,13 +119,6 @@ To simplify the setup of Kafka and Zookeeper, you can use Docker Compose. Below 
 ```yaml
 version: '3.8'
 services:
-  postgres:
-    image: postgres:14
-    ports:
-      - "5432:5432"
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
   zookeeper:
     image: confluentinc/cp-zookeeper:5.5.3
     environment:
